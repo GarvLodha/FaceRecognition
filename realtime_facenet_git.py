@@ -131,7 +131,7 @@ with tf.Graph().as_default():
                         ##print('result: ', best_class_indices[0])
                         print('result: ', best_class_indices[0])
                         print('prob: ', best_class_probabilities[0])
-                        if best_class_probabilities > 0.94:
+                        if best_class_probabilities > 0.80:
                              for H_i in HumanNames:
                                   if HumanNames[best_class_indices[0]] == H_i:
                                        result_names = HumanNames[best_class_indices[0]]
